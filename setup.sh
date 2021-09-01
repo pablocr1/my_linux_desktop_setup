@@ -56,6 +56,13 @@ echo "================================================================
 
 "
 
+echo "Instalando o spotify..."
+sudo snap install spotify
+echo "================================================================
+
+
+"
+
 echo "Instalando o nodejs..."   
 curl -sL https://deb.nodesource.com/setup_14.x -o setup_14.sh
 sudo sh ./setup_14.sh
