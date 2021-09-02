@@ -35,8 +35,8 @@ echo "================================================================
 
 "
 
-echo "Instalando o beekeeper-sudio..."
-sudo snap install beekeeper-sudio
+echo "Instalando o beekeeper-studio..."
+sudo snap install beekeeper-studio
 echo "================================================================
 
 
@@ -80,7 +80,7 @@ echo "================================================================
 "
 
 echo "Instalando o pycharm..." 
-sudo snap install pycharm-profissional --classic
+sudo snap install pycharm-professional --classic
 echo "================================================================
 
 
