@@ -7,13 +7,6 @@ echo "================================================================
 
 "
 
-echo "Instalando o snap..."
-sudo apt install snapd
-echo "================================================================
-
-
-"
-
 echo "Instalando o git..."
 sudo apt install git
 echo "================================================================
@@ -28,29 +21,8 @@ echo "================================================================
 
 "
 
-echo "Instalando o vscode..."
-sudo snap install code --classic
-echo "================================================================
-
-
-"
-
-echo "Instalando o beekeeper-studio..."
-sudo snap install beekeeper-studio
-echo "================================================================
-
-
-"
-
 echo "Instalando o postman..."
 snap install --channel=v7 postman
-echo "================================================================
-
-
-"
-
-echo "Instalando o android-studio..."
-sudo snap install android-studio --classic
 echo "================================================================
 
 
@@ -74,13 +46,6 @@ echo "================================================================
 
 echo "Instalando o yarn..." 
 sudo npm install -g yarn
-echo "================================================================
-
-
-"
-
-echo "Instalando o pycharm..." 
-sudo snap install pycharm-professional --classic
 echo "================================================================
 
 
