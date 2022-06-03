@@ -19,6 +19,7 @@ sudo apt-get install python3 python3-venv python3-pip -y
 echo "Instalando o Chrome..."
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
+rm google-chrome-stable_current_amd64.deb
 
 echo "Instalando o Visual Studio Code..."
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add –
@@ -33,6 +34,7 @@ read -p "Pressione enter para continuar" pass
 echo "Baixando o WhatsApp Web..."
 https://www.thefanclub.co.za/sites/all/modules/pubdlcnt/pubdlcnt.php?file=https://www.thefanclub.co.za/sites/default/files/public/downloads/whatsapp-webapp_1.0_all.deb&nid=200
 sudo dpkg -i whatsapp-webapp_1.0_all.deb
+rm whatsapp-webapp_1.0_all.deb
 
 echo "Instalando o git..."
 sudo apt install git -y
