@@ -87,6 +87,8 @@ sudo rm setup_14.sh
 # Os comandos a seguir devem ser executados na pasta HOME do usuário
 cd $HOME
 
+mkdir Projetos
+mkdir Trabalho
 # mkdir .icons
 
 # echo "Instalando o tema Dracula para o sistema..."
