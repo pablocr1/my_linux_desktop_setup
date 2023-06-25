@@ -6,8 +6,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo "Edite o arquivo .zshrc para alterar o tema e os plugins"
 echo "Altere a linha 'ZSH_THEME="robbyrussell"' para 'ZSH_THEME="spaceship"' e 'plugins=(git)' para 'plugins=(git zsh-autosuggestions zsh-syntax-highlighting)' no arquivo .zshrc"
 
-echo "Instalando o NodeJS..."
-nvm install --lts
-
-echo "Instalando o Yarn..."
-npm install -g yarn
+echo "Instalando NVM..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash

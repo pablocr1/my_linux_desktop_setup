@@ -21,15 +21,7 @@ echo "Instalando o git..."
 sudo apt install git -y
 
 echo "Instalando a fonte Fira Code..."
-sudo apt install git -y
-
-echo "Instalando o spotify..."
-curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update && sudo apt-get install spotify-client -y
-
-echo "Instalando o NVM..."   
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+sudo apt install fonts-firacode -y
 
 echo "Instalando o docker..."
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -43,15 +35,16 @@ sudo usermod -aG docker $USER
 
 sudo rm get-docker.sh
 
-sudo rm setup_14.sh
-
-mkdir Projects
+mkdir Work
 
 echo "Gerando chave SSH para o git..."
 read -p "Digite seu email utilizado no Github: " email
+read -p "Digite seu nome utilizado no Github: " nome
 ssh-keygen -t ed25519 -C "$email"
 echo "A chave SSH se encontra em ~/.ssh/id_ed25519.pub"
 echo "Copie e cole no campo 'SSH and GPC Keys' nas configurações do github"
+git config --global user.name "$nome"
+git config --global user.email "$email"
 read -p "Pressione enter para continuar" pass
 
 echo "Instalando o shell ZSH..."
